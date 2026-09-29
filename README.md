@@ -7,6 +7,16 @@ events. It demonstrates a full client–server architecture:
 - **RESTful API:** Node.js + Express
 - **Client:** HTML + JavaScript + DOM + `fetch` (Promises / `async/await`)
 
+> 中文说明请见 [README.zh-CN.md](README.zh-CN.md)
+
+## Features
+
+- Full-viewport landing page with hero and calls-to-action
+- Events list with category badges and funding progress bars
+- Search / filter by date, location and category
+- Event detail shown in a modal ("View details") or on a dedicated page
+- Responsive "sky / ink" theme across the whole site
+
 ## Project structure
 
 ```
@@ -21,16 +31,23 @@ charity-events-project/
 │   ├── .env                # local DB config (not committed)
 │   └── .env.example
 ├── clientside/             # frontend -> usernameA2-clientside.zip
-│   ├── index.html          # Home
-│   ├── search.html         # Search
-│   ├── event.html          # Event detail
+│   ├── index.html          # Landing page (hero)
+│   ├── events.html         # Events list
+│   ├── search.html         # Search / filter
+│   ├── event.html          # Event detail page
 │   ├── css/style.css
-│   ├── js/{api,home,search,event}.js
+│   ├── js/
+│   │   ├── api.js          # fetch wrapper
+│   │   ├── home.js         # events list rendering
+│   │   ├── search.js       # search / filter logic
+│   │   ├── event.js        # detail page rendering
+│   │   └── event-modal.js  # "View details" modal
 │   └── images/
 ├── database/
 │   └── charityevents_db.sql
 ├── docs/
 │   └── project-report.md
+├── start.bat               # one-click launcher (Windows)
 └── README.md
 ```
 
@@ -41,13 +58,22 @@ charity-events-project/
 
 ## Quick start
 
-### 1. Import the database
+### Option A — one-click (Windows)
+
+Double-click `start.bat`. It starts the API on `http://localhost:3000`, serves
+the client on `http://localhost:5500`, and opens the site in your browser.
+
+Make sure your MySQL service (e.g. `MySQL84`) is running first.
+
+### Option B — manual
+
+#### 1. Import the database
 
 ```bash
 mysql -u root -p < database/charityevents_db.sql
 ```
 
-### 2. Start the API
+#### 2. Start the API
 
 ```bash
 cd api
@@ -57,14 +83,14 @@ npm start          # http://localhost:3000
 
 The API endpoints are:
 
-| Method | Path                         | Purpose                          |
-|--------|------------------------------|----------------------------------|
-| GET    | `/api/events`                | Home: upcoming, non-suspended    |
-| GET    | `/api/events/search`         | Search by date/location/category |
-| GET    | `/api/events/:id`            | Single event detail              |
-| GET    | `/api/categories`            | All categories                   |
+| Method | Path                 | Purpose                          |
+|--------|----------------------|----------------------------------|
+| GET    | `/api/events`        | Upcoming, non-suspended events   |
+| GET    | `/api/events/search` | Search by date/location/category |
+| GET    | `/api/events/:id`    | Single event detail              |
+| GET    | `/api/categories`    | All categories                   |
 
-### 3. Start the client
+#### 3. Start the client
 
 ```bash
 cd clientside
@@ -78,8 +104,16 @@ Then open `http://localhost:5500/index.html`.
 
 ## Database credentials
 
-Edit `api/.env` to match your local MySQL setup. The default expects
-`root` with an empty password and a database named `charityevents_db`.
+Edit `api/.env` to match your local MySQL setup:
+
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your-password
+DB_NAME=charityevents_db
+```
+
+Copy `.env.example` to `.env` and fill in your own values.
 
 ## Submission (per the assessment brief)
 
