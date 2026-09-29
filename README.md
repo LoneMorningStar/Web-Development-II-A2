@@ -11,11 +11,9 @@ events. It demonstrates a full client–server architecture:
 
 ## Features
 
-- Full-viewport landing page with hero and calls-to-action
 - Events list with category badges and funding progress bars
 - Search / filter by date, location and category
 - Event detail shown in a modal ("View details") or on a dedicated page
-- Responsive "sky / ink" theme across the whole site
 
 ## Project structure
 
@@ -114,12 +112,3 @@ DB_NAME=charityevents_db
 ```
 
 Copy `.env.example` to `.env` and fill in your own values.
-
-## Submission (per the assessment brief)
-
-- Project report (PDF/Word)
-- `usernameA2-clientside.zip`
-- `usernameA2-api.zip`
-- `database/charityevents_db.sql` (for the marker to import locally)
-- GitHub repository URL
-- Demo video link (SCU OneDrive)

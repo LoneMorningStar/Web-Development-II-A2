@@ -8,11 +8,9 @@
 
 ## 功能
 
-- 全屏 Hero 落地页 + 行动号召按钮
 - 活动列表，带分类徽章和募款进度条
 - 按日期 / 地点 / 分类搜索筛选
 - 活动详情：列表页弹窗查看（「View details」），或独立详情页
-- 全站统一的「sky / ink」响应式主题
 
 ## 项目结构
 
@@ -110,12 +108,3 @@ DB_NAME=charityevents_db
 ```
 
 将 `.env.example` 复制为 `.env` 并填入你自己的值。
-
-## 提交内容（依据作业要求）
-
-- 项目报告（PDF/Word）
-- `usernameA2-clientside.zip`
-- `usernameA2-api.zip`
-- `database/charityevents_db.sql`（供评分者本地导入）
-- GitHub 仓库地址
-- 演示视频链接（SCU OneDrive）
