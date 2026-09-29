@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — Charity Events Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=UnifrakturCook:wght@700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Charity Events</a>
+      <nav>
+        <a href="events.html" class="active">Events</a>
+        <a href="search.html">Search</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="org-info" class="hero">
+      <h1>Hope Foundation</h1>
+      <p>We connect communities with charity events that change lives.</p>
+      <p class="contact">Contact: info@hope.org | 0400 000 001</p>
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Charity Events</h2>
+      <div id="event-list" class="grid">Loading...</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 Charity Events Hub. PROG2002 Assessment 2.</div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/event-modal.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

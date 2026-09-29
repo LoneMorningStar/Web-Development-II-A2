@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Events — Charity Events Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=UnifrakturCook:wght@700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Charity Events</a>
+      <nav>
+        <a href="events.html">Events</a>
+        <a href="search.html" class="active">Search</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Search Events</h1>
+
+    <form id="search-form" class="search-form">
+      <label>Date
+        <input type="date" id="date">
+      </label>
+      <label>Location
+        <input type="text" id="location" placeholder="e.g. Brisbane">
+      </label>
+      <label>Category
+        <select id="category">
+          <option value="">All</option>
+        </select>
+      </label>
+      <button type="submit" class="btn btn-primary">Search</button>
+      <button type="button" id="clear-btn" class="btn btn-outline">Clear Filters</button>
+    </form>
+
+    <p id="error" class="error"></p>
+    <div id="results"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 Charity Events Hub. PROG2002 Assessment 2.</div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/event-modal.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
