@@ -1,4 +1,4 @@
-# PingXiang Charity — PROG2002 Assessment 2
+# PingXiang Charity
 
 A dynamic web application that lets users discover and search charity fundraising
 events. It demonstrates a full client–server architecture:
@@ -19,17 +19,17 @@ events. It demonstrates a full client–server architecture:
 
 ```
 charity-events-project/
-├── api/                    # backend  -> usernameA2-api.zip
+├── api/                    # backend
 │   ├── event_db.js         # MySQL connection pool
 │   ├── server.js           # Express entry point
 │   ├── routes/
 │   │   ├── events.js       # /api/events endpoints
 │   │   └── categories.js   # /api/categories endpoint
 │   ├── package.json
-│   ├── .env                # local DB config (not committed)
+│   ├── .env                # local DB config
 │   └── .env.example
-├── clientside/             # frontend -> usernameA2-clientside.zip
-│   ├── index.html          # Home (landing + mission + events list)
+├── clientside/             # frontend
+│   ├── index.html          # Home
 │   ├── search.html         # Search / filter
 │   ├── event.html          # Event detail page
 │   ├── css/style.css
