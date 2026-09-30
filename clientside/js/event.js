@@ -16,8 +16,9 @@ var DETAIL_SKELETON =
   '</div>';
 
 async function loadEvent() {
-  var params = new URLSearchParams(window.location.search);
-  var id = params.get('id');
+  var query = new URLSearchParams(window.location.search);
+  var hash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+  var id = query.get('id') || hash.get('id');
   var container = document.getElementById('event-detail');
 
   if (!id || !/^\d+$/.test(id)) {

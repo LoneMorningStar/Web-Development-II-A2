@@ -1,4 +1,4 @@
-# Charity Events Hub — PROG2002 Assessment 2
+# PingXiang Charity — PROG2002 Assessment 2
 
 A dynamic web application that lets users discover and search charity fundraising
 events. It demonstrates a full client–server architecture:
@@ -35,14 +35,14 @@ charity-events-project/
 │   ├── css/style.css
 │   ├── js/
 │   │   ├── api.js          # fetch wrapper
+│   │   ├── nav.js          # shared navigation / menu / animations
 │   │   ├── home.js         # home events list rendering
 │   │   ├── search.js       # search / filter logic
 │   │   └── event.js        # detail page rendering
+│   ├── videos/             # hero background video
 │   └── images/
 ├── database/
 │   └── charityevents_db.sql
-├── docs/
-│   └── project-report.md
 ├── start.bat               # one-click launcher (Windows)
 └── README.md
 ```

@@ -1,4 +1,4 @@
-# Charity Events Hub — PROG2002 作业 2
+# PingXiang Charity — PROG2002 作业 2
 
 一个动态 Web 应用，让用户浏览并搜索慈善筹款活动，演示了完整的客户端—服务端架构：
 
@@ -32,14 +32,14 @@ charity-events-project/
 │   ├── css/style.css
 │   ├── js/
 │   │   ├── api.js          # fetch 封装
+│   │   ├── nav.js          # 共享导航 / 菜单 / 动效
 │   │   ├── home.js         # 首页活动列表渲染
 │   │   ├── search.js       # 搜索 / 筛选逻辑
 │   │   └── event.js        # 详情页渲染
+│   ├── videos/             # 首页背景视频
 │   └── images/
 ├── database/
 │   └── charityevents_db.sql
-├── docs/
-│   └── project-report.md
 ├── start.bat               # 一键启动脚本（Windows）
 └── README.md
 ```

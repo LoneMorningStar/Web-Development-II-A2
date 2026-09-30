@@ -40,7 +40,7 @@ function renderCard(e, delay) {
     : '<span class="card__media--empty">' + ICO.flower(32) + '</span>';
 
   return (
-    '<a class="card" href="event.html?id=' + e.event_id + '" data-reveal style="transition-delay:' + delay + 'ms">' +
+    '<a class="card" href="event.html#id=' + e.event_id + '" data-reveal style="transition-delay:' + delay + 'ms">' +
       '<div class="card__media">' + media +
         '<span class="card__tag">' + esc(e.category_name) + '</span>' +
       '</div>' +
