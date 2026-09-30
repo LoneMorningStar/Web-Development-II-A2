@@ -1,4 +1,4 @@
-# PingXiang Charity — PROG2002 作业 2
+# PingXiang Charity
 
 一个动态 Web 应用，让用户浏览并搜索慈善筹款活动，演示了完整的客户端—服务端架构：
 
@@ -16,17 +16,17 @@
 
 ```
 charity-events-project/
-├── api/                    # 后端  -> usernameA2-api.zip
+├── api/                    # 后端
 │   ├── event_db.js         # MySQL 连接池
 │   ├── server.js           # Express 入口
 │   ├── routes/
 │   │   ├── events.js       # /api/events 端点
 │   │   └── categories.js   # /api/categories 端点
 │   ├── package.json
-│   ├── .env                # 本地数据库配置（不提交）
+│   ├── .env                # 本地数据库配置
 │   └── .env.example
-├── clientside/             # 前端 -> usernameA2-clientside.zip
-│   ├── index.html          # 首页（落地 + 使命 + 活动列表）
+├── clientside/             # 前端
+│   ├── index.html          # 首页
 │   ├── search.html         # 搜索 / 筛选
 │   ├── event.html          # 活动详情页
 │   ├── css/style.css
