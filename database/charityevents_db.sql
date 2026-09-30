@@ -74,31 +74,46 @@ INSERT INTO organisations (org_name, mission, contact_email, contact_phone, webs
 ('Care Australia',  'Community health support',         'care@care.org',  '0400000003', 'https://care.org');
 
 -- ------------------------------------------------------------
--- Seed: events (8+ sample events covering past/upcoming/suspended)
+-- Seed: events (all located in Pingxiang, Jiangxi — 江西萍乡)
 -- ------------------------------------------------------------
 INSERT INTO events
 (event_name, description, event_date, location, ticket_price, goal_amount, raised_amount, image_url, is_suspended, org_id, category_id) VALUES
 ('City Fun Run 2026',
  'A 5km charity fun run through the city to raise funds for children''s education programs.',
- '2026-11-15 08:00:00', 'Brisbane CBD',     25.00, 10000.00,  3200.00, 'images/funrun.svg',   0, 1, 1),
+ '2026-11-15 08:00:00', '江西省萍乡市安源区', 25.00, 10000.00,  3200.00, 'images/funrun.svg',   0, 1, 1),
 ('Charity Gala Night',
  'A formal gala dinner and live auction evening supporting Hope Foundation.',
- '2026-12-05 18:30:00', 'Hilton Brisbane', 120.00, 50000.00, 18500.00, 'images/gala.svg',     0, 1, 2),
+ '2026-12-05 18:30:00', '江西省萍乡市安源区', 120.00, 50000.00, 18500.00, 'images/gala.svg',     0, 1, 2),
 ('Silent Auction for Kids',
- 'An online silent auction of donated items, with all proceeds going to children in need.',
- '2026-10-20 10:00:00', 'Online',            0.00, 20000.00,  7600.00, 'images/auction.svg',  0, 2, 3),
+ 'A silent auction of donated items, with all proceeds going to children in need.',
+ '2026-10-20 10:00:00', '江西省萍乡市湘东区', 0.00, 20000.00,  7600.00, 'images/auction.svg',  0, 2, 3),
 ('Green Earth Concert',
  'A live charity concert featuring local artists to support environmental protection.',
- '2026-11-30 19:00:00', 'Riverstage',       45.00, 30000.00, 12000.00, 'images/concert.svg',  0, 2, 4),
+ '2026-11-30 19:00:00', '江西省萍乡市芦溪县', 45.00, 30000.00, 12000.00, 'images/concert.svg',  0, 2, 4),
 ('Community Bake Sale',
  'A community bake sale raising funds for a local homeless shelter.',
- '2026-10-05 09:00:00', 'South Bank',        5.00,  2000.00,   900.00, 'images/bake.svg',     0, 3, 5),
+ '2026-10-05 09:00:00', '江西省萍乡市上栗县', 5.00,  2000.00,   900.00, 'images/bake.svg',     0, 3, 5),
 ('Charity Walk for Health',
- 'A 10km awareness walk along the Gold Coast to promote community health.',
- '2026-11-01 07:30:00', 'Gold Coast',       15.00,  8000.00,  2500.00, 'images/walk.svg',     0, 3, 1),
+ 'A 10km awareness walk along the river to promote community health.',
+ '2026-11-01 07:30:00', '江西省萍乡市安源区', 15.00,  8000.00,  2500.00, 'images/walk.svg',     0, 3, 1),
 ('Past Run 2025',
  'Last year''s fun run, fully completed and now archived as a past event.',
- '2025-11-10 08:00:00', 'Brisbane CBD',     20.00, 10000.00, 10000.00, 'images/funrun.svg',   0, 1, 1),
+ '2025-11-10 08:00:00', '江西省萍乡市安源区', 20.00, 10000.00, 10000.00, 'images/funrun.svg',   0, 1, 1),
 ('Suspended Event X',
  'An event that was suspended due to a policy review and is hidden from the public.',
- '2026-12-01 10:00:00', 'Unknown',          10.00,  5000.00,   100.00, 'images/placeholder.svg', 1, 1, 2);
+ '2026-12-01 10:00:00', '江西省萍乡市莲花县', 10.00,  5000.00,   100.00, 'images/placeholder.svg', 1, 1, 2),
+('Pingxiang Charity Concert',
+ 'An evening of live music in Anyuan to raise funds for local children''s education.',
+ '2026-12-12 19:00:00', '江西省萍乡市安源区', 60.00, 40000.00, 15000.00, 'images/concert.svg',  0, 2, 4),
+('Anyuan Children''s Charity Bazaar',
+ 'A family-friendly bazaar with home-made food and crafts supporting children in need.',
+ '2026-10-25 09:00:00', '江西省萍乡市上栗县', 0.00,  5000.00,  1200.00, 'images/bake.svg',     0, 1, 5),
+('Lianhua County Charity Gala',
+ 'A formal dinner and auction evening supporting community health programs in Lianhua.',
+ '2026-12-18 18:00:00', '江西省萍乡市莲花县', 150.00, 60000.00, 22000.00, 'images/gala.svg',     0, 3, 2),
+('Xiangdong Eco Fun Run',
+ 'A 6km eco fun run through Xiangdong to promote environmental awareness.',
+ '2026-11-08 08:00:00', '江西省萍乡市湘东区', 30.00, 12000.00,  4300.00, 'images/funrun.svg',   0, 2, 1),
+('Luxi Silent Auction for Education',
+ 'A silent auction of artwork and crafts to fund scholarships for rural students.',
+ '2026-11-20 10:00:00', '江西省萍乡市芦溪县', 0.00, 25000.00,  8100.00, 'images/auction.svg',  0, 1, 3);

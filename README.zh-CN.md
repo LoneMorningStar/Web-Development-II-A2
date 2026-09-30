@@ -26,17 +26,15 @@ charity-events-project/
 │   ├── .env                # 本地数据库配置（不提交）
 │   └── .env.example
 ├── clientside/             # 前端 -> usernameA2-clientside.zip
-│   ├── index.html          # 落地页（Hero）
-│   ├── events.html         # 活动列表
+│   ├── index.html          # 首页（落地 + 使命 + 活动列表）
 │   ├── search.html         # 搜索 / 筛选
 │   ├── event.html          # 活动详情页
 │   ├── css/style.css
 │   ├── js/
 │   │   ├── api.js          # fetch 封装
-│   │   ├── home.js         # 活动列表渲染
+│   │   ├── home.js         # 首页活动列表渲染
 │   │   ├── search.js       # 搜索 / 筛选逻辑
-│   │   ├── event.js        # 详情页渲染
-│   │   └── event-modal.js  # 「View details」弹窗
+│   │   └── event.js        # 详情页渲染
 │   └── images/
 ├── database/
 │   └── charityevents_db.sql

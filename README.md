@@ -29,17 +29,15 @@ charity-events-project/
 │   ├── .env                # local DB config (not committed)
 │   └── .env.example
 ├── clientside/             # frontend -> usernameA2-clientside.zip
-│   ├── index.html          # Landing page (hero)
-│   ├── events.html         # Events list
+│   ├── index.html          # Home (landing + mission + events list)
 │   ├── search.html         # Search / filter
 │   ├── event.html          # Event detail page
 │   ├── css/style.css
 │   ├── js/
 │   │   ├── api.js          # fetch wrapper
-│   │   ├── home.js         # events list rendering
+│   │   ├── home.js         # home events list rendering
 │   │   ├── search.js       # search / filter logic
-│   │   ├── event.js        # detail page rendering
-│   │   └── event-modal.js  # "View details" modal
+│   │   └── event.js        # detail page rendering
 │   └── images/
 ├── database/
 │   └── charityevents_db.sql
