@@ -2,9 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../event_db');
 
-// GET /api/events  -> Home page
-// Returns all current/upcoming events that are NOT suspended,
-// together with their category and organisation names.
+
 router.get('/', async (req, res) => {
   try {
     const sql = `
@@ -26,9 +24,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET /api/events/search?date=&location=&category=
-// Filters events by exact date, fuzzy location and category id.
-// NOTE: must be declared BEFORE the /:id route below.
 router.get('/search', async (req, res) => {
   try {
     const { date, location, category } = req.query;
@@ -63,7 +58,6 @@ router.get('/search', async (req, res) => {
   }
 });
 
-// GET /api/events/:id  -> Event detail page
 router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;

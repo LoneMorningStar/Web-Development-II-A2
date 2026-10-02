@@ -1,7 +1,3 @@
-// js/search.js
-// Handles the Search page: populates the category dropdown, validates and
-// filters events, and renders results.
-
 document.addEventListener('DOMContentLoaded', async function () {
   await loadCategories();
   document.getElementById('search-form').addEventListener('submit', onSearch);

@@ -1,11 +1,3 @@
-// js/nav.js
-// Shared navigation behaviour for all pages:
-//   - fixed navbar scroll state
-//   - full-screen overlay menu (hamburger + desktop "Navigate" pill)
-//   - scroll-triggered reveal animations (IntersectionObserver)
-//   - shared inline SVG icon helpers (lucide-style, currentColor)
-
-/* ---------- Inline SVG icons ---------- */
 function svg(paths, size) {
   return '<svg class="icon" width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + paths + '</svg>';
 }

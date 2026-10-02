@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-require('./event_db'); // establishes the MySQL connection pool
+require('./event_db');
 
 const app = express();
 
-app.use(cors());        // allow cross-origin requests from the client site
+app.use(cors());
 app.use(express.json());
 
 app.use('/api/events',     require('./routes/events'));

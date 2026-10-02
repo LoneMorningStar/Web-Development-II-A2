@@ -1,6 +1,3 @@
-// js/api.js
-// Central wrapper around the fetch() calls to the Charity Events API.
-
 const API_BASE = 'http://localhost:3000/api';
 
 async function getJSON(url) {

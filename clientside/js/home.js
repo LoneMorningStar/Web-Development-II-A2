@@ -1,6 +1,3 @@
-// js/home.js
-// Loads and renders the list of upcoming charity events on the Home page.
-
 document.addEventListener('DOMContentLoaded', loadHome);
 
 var HOME_SKELETON = Array.from({ length: 3 }, function () {
